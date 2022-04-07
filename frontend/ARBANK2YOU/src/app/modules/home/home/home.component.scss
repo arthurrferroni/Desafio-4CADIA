@@ -1,0 +1,40 @@
+@import "../../../../styles/variables.scss";
+
+$home-border-radius:12px;
+
+::ng-deep app-home {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.home {
+    ::ng-deep .p-dropdown {
+        border-radius:$home-border-radius;
+    }
+
+    .available-balance {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        border:1px solid $light-gray;
+        border-radius: $home-border-radius;
+        padding:0rem 2rem;
+        height: 100%;
+
+        .available-balance-value {
+            color:$color-primary;
+            font-size:1.4rem;
+        }
+    }
+
+    .graphs {
+        margin-top:1.3rem;
+    }
+
+    .recent-balance-updates, .score-graph {
+        border:1px solid $light-gray;
+        border-radius:$home-border-radius;
+        height:16rem;
+    }
+}

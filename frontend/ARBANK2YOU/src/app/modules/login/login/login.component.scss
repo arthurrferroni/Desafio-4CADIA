@@ -1,0 +1,33 @@
+@import "../../../../styles/variables.scss";
+
+::ng-deep app-login {
+    display: flex;
+    align-items: center;
+    width: 18rem;
+}
+
+.login {
+    background: $color-primary;
+    width: 100%;
+    margin: 0 auto;
+    height: 80vh;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    color: white;
+
+    .data-input {
+        input:last-child {
+            margin-top: 0.8rem;
+        }
+    }
+
+    .user-big {
+        width: 8rem;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        margin-top: -5rem;
+    }
+}

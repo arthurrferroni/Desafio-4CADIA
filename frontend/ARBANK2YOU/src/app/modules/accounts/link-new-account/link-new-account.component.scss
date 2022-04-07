@@ -1,0 +1,10 @@
+@import "../../../../styles/variables.scss";
+
+::ng-deep app-link-new-account {
+    display: flex;
+    align-items: center;
+}
+
+.title-row {
+    margin-bottom:2rem !important;
+}

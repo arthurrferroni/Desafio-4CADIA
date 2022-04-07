@@ -1,0 +1,54 @@
+<div class="registration-form d-flex">
+  <div class="side-area d-flex justify-content-between">
+    <img>
+    <span class="primary-text">Register new user</span>
+    <a class='w-100 btn btn-secondary btn-send' href='/'>Back</a>
+  </div>
+  <div class="main-area d-flex flex-column justify-content-between">
+    <div>
+      <div class="row form-row title-row">
+        <h1 class="big-title">New User</h1>
+      </div>
+      <div class="row form-row">
+        <div class="form-group col-md-8">
+          <label>Full Name
+          </label>
+          <input class="input-name form-control" [(ngModel)]='user.name' />
+        </div>
+        <div class="form-group col-md-4">
+          <label>Email
+          </label>
+          <input class="input-email form-control" [(ngModel)]='user.email' />
+        </div>
+      </div>
+      <div class="row form-row">
+        <div class="form-group col-md-12">
+          <label>Address
+          </label>
+          <input [(ngModel)]='user.address' class="input-address form-control" />
+        </div>
+      </div>
+      <div class="row form-row">
+        <div class="form-group col-md-4">
+          <label>Phone Number
+          </label>
+          <input [(ngModel)]='user.phone_number' class="input-phone-number form-control" />
+        </div>
+        <div class="form-group col-md-4">
+          <label>Birth Date
+          </label>
+          <p-calendar class="input-birth-date" appendTo='body' [monthNavigator]="true" [yearNavigator]="true" yearRange="1900:2021" [touchUI]='true' dateFormat='dd/mm/yy' [(ngModel)]="user.birth_date"></p-calendar>
+        </div>
+        <div class="form-group col-md-4">
+          <label>National Id
+          </label>
+          <input class="input-national-id form-control"  [(ngModel)]="user.national_id" />
+        </div>
+      </div>
+    </div>
+    <div class="row form-row">
+      <div class="offset-md-9 col-md-3">
+        <button (click)='register()' class="btn w-100 btn-primary btn-send">Send</button>
+    </div>
+  </div>
+</div>

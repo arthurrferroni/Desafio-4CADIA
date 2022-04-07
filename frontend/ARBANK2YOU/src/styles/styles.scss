@@ -1,0 +1,74 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'buttons.scss';
+@import 'forms.scss';
+
+html, body {
+    background-color: $color-background !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.primary-color {
+    color:$color-primary;
+}
+
+.secondary-color {
+    color:white;
+}
+
+.main-area {
+    height:80vh;
+    background:white;
+    border-radius:32px;
+    width:60rem;
+    transition: 2s width;
+    margin-left:-1rem;
+    padding:2rem;
+    padding-left:3rem;
+    overflow-y:auto;
+}
+
+.side-area {
+    background: $color-primary;
+    width: 18rem;
+    margin: 0 auto;
+    height: 80vh;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+    .data-input {
+        input:last-child {
+            margin-top: 0.8rem;
+        }
+    }
+
+    .user-big {
+        width: 8rem;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        margin-top: -5rem;
+    }
+}
+
+.title-row {
+    margin-top:0;
+    border-bottom:2px solid #73737324;
+    margin-bottom:2rem;
+    padding-bottom:0.5rem;
+}
+
+.big-title {
+    color:$color-primary;
+}
+
+.ui-calendar .ui-datepicker {
+    height : 200px !important;
+}
+
+

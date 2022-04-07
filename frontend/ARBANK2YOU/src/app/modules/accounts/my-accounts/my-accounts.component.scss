@@ -1,0 +1,22 @@
+@import "../../../../styles/variables.scss";
+
+::ng-deep app-my-accounts {
+    display: flex;
+    align-items: center;
+}
+
+.my-accounts {
+    .account-cards {
+        margin-top:2rem;
+    }
+
+    .account-card {
+        border:1px solid $light-gray;
+        border-radius:12px;
+        padding:0.75rem;
+
+        &:hover {
+            cursor:pointer;
+        }
+    }
+}

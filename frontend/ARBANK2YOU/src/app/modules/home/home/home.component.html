@@ -1,0 +1,30 @@
+<div class='home'>
+    <div class='main-area'>
+        <div class='container-fluid'>
+            <div class="row title-row">
+                <h1 class="big-title col-md-12">Home</h1>
+            </div>
+            <div class='row'>
+                <p-dropdown class='select-bank col-md-3' [options]="bankList" optionLabel="name" optionDisabled="inactive"></p-dropdown>
+        
+                <div class='col-md-9'>
+                    <div class='available-balance'>
+                        <span>Avaliable Balance</span>
+                        <span class='available-balance-value'>{{availableBalance | currency:'BRL'}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class='row graphs'>
+                <div class='col-md-8'>
+                    <div class='recent-balance-updates'>
+                    </div>
+                </div>
+                <div class='col-md-4'>
+                    <div class='score-graph'>
+                        <p-chart type="doughnut" [data]="data" [options]="chartOptions" [style]="{'width': '40%'}"></p-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="main-area">
+  <div class="container-fluid">
+    <div class="row title-row d-flex">
+      <h1 class="big-title col-md-9">Account Details</h1>
+    </div>
+    <div class="row">
+      <div class='col-md-3 form-group'>
+        <label>Bank</label>
+        <p-dropdown class='select-bank' [options]="bankList" optionLabel="name" optionDisabled="inactive"></p-dropdown>
+      </div>
+      <div class="col-md-4 form-group date-from">
+        <label for="basic">From</label>
+        <p-calendar dateFormat='dd/mm/yy' [(ngModel)]="dateFrom"></p-calendar>
+    </div>
+    <div class="col-md-4 form-group date-to">
+      <label for="basic">To</label>
+      <p-calendar dateFormat='dd/mm/yy' [(ngModel)]="dateTo"></p-calendar>
+  </div>
+    </div>
+    <div class='row transactions-header'>
+      <div class='col-md-3'>
+        Date
+      </div>
+
+      <div class='col-md-3'>
+        Bank
+      </div>
+
+      <div class='col-md-3'>
+        Description
+      </div>
+
+      <div class='col-md-3'>
+        Value
+      </div>
+    </div>
+    <div class='row transaction'>
+      <div class='col-md-3'>
+        06/10/2021
+      </div>
+
+      <div class='col-md-3'>
+        Bank
+      </div>
+
+      <div class='col-md-3'>
+        Default title
+      </div>
+
+      <div class='col-md-3'>
+        -R$39,20
+      </div>
+    </div>
+
+  </div>
+</div>

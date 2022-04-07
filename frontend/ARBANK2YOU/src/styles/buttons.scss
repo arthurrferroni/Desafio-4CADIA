@@ -1,0 +1,21 @@
+@import 'variables.scss';
+
+.btn {
+    border-radius:16px !important;
+    border:none !important;
+
+    transition: .3s all;
+
+    &:hover {
+        filter:brightness(1.1);
+    }
+
+    &.btn-primary {
+        background-color:$color-primary !important;
+    }
+
+    &.btn-secondary {
+        background-color:$color-secondary !important;
+    }
+}
+

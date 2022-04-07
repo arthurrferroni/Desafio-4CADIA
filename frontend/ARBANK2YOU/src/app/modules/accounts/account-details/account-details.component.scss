@@ -1,0 +1,12 @@
+@import "../../../../styles/variables.scss";
+
+::ng-deep app-account-details {
+    display: flex;
+    align-items: center;
+}
+
+.transactions-header {
+    border-bottom:1px solid $light-gray;
+    font-weight: bold;
+    padding-bottom:0.5rem;
+}

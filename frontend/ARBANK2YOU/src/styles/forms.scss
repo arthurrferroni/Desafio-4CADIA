@@ -1,0 +1,44 @@
+@import 'variables.scss';
+
+
+.form-row {
+    margin-top:0.7rem;
+    margin-bottom:0.7rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom:0.3rem
+    }
+
+    input.form-control {
+        border:1px solid $color-primary;
+        border-radius:32px;
+    }
+}
+
+p-dropdown {
+    .p-dropdown {
+        width:100% !important;
+    }
+}
+
+
+.p-inputtext {
+        border:1px solid $color-primary;
+        border-radius:32px;
+        width:100%;
+}
+
+.p-calendar {
+    width:100%;
+
+    .p-inputtext {
+        height:auto;
+        padding: 0.35rem;
+    }
+}
+

@@ -1,0 +1,40 @@
+@import '../../../../styles/variables.scss';
+
+::ng-deep app-side-area {
+    align-items: center;
+    display:flex;
+}
+
+.side-area {
+    display:none !important;
+    width: 18rem;
+    padding:0 !important;
+
+    &.active {
+        display: flex !important;
+    }
+
+    .top {
+        padding:3rem;
+    }
+
+    .menu {
+        width:100%;
+        padding:0;
+
+        li {
+            background-color:$light-blue;
+            color:white;
+            transition: .3s all;
+            width:100%;
+            list-style-type: none;
+            padding:1rem;
+            text-align: center;
+
+            &:hover, .active {
+                filter:brightness(1.05);
+                cursor:pointer;
+            }
+        }
+    }
+}
